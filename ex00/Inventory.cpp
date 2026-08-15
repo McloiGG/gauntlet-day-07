@@ -10,9 +10,9 @@ bool	Inventory::has(const std::string& item) const
 	for (const auto& i : m_items)
 	{
 		if (i == item)
-			return false;
+			return true;
 	}
-	return true;
+	return false;
 }
 
 int	Inventory::count() const { return m_items.size(); }
