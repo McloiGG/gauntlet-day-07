@@ -15,6 +15,7 @@ void	Inventory::remove(const std::string& item)
 			return;
 		}
 	}
+	m_items.erase(m_items.begin());
 }
 
 bool	Inventory::has(const std::string& item) const
